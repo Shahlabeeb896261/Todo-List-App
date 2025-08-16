@@ -1,0 +1,133 @@
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  margin: 50px auto 0;
+  background-color: #bbb8b2;
+  border-radius: 8px;
+  padding: 1.6rem 2.6rem;
+}
+
+.todo-app .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-app .top h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.input input {
+  flex: 1;
+  height: 52px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 1.6rem;
+  padding: 0 1.4rem;
+  padding-right: 135px;
+}
+
+.save-btn {
+  width: 120px;
+  height: 52px;
+  border-radius: 1.8rem;
+  border: none;
+  background-color: #2e2e3a;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.your-todo {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 0 0 8px;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 2rem;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.no-todos {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 0 0 24px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 8px;
+}
+
+.edit-btn {
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 3px 12px;
+  border: none;
+  background-color: #de9151;
+  border-radius: 4px;
+  color: white;
+}
+
+.delete-btn {
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 3px 12px;
+  border: none;
+  background-color: #f34213;
+  border-radius: 4px;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .todo-app {
+    width: 100%;
+    margin: 20px auto;
+    padding: 1.2rem 1.6rem;
+  }
+  .todo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .buttons {
+    gap: 30px;
+  }
+}
